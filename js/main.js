@@ -11,19 +11,18 @@ $('.mainfull').fullpage({
 $('.mainSlide').slick({
     arrows: true,
     dots: false,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000,
     speed: 3000,
     pauseOnHover: false,
     pauseOnFocus: false,
 });
 
-var barwidth = $('.bar').width();
-$('.subSlide').on('afterChange', function (e, s, c) {
-    var bb = barwidth / s.slideCount;
-    $('.bar span').css({ width: bb })
-    $('.bar span').css({ width: bb * (c + 1) })
-
-    $('.sub_num span').text("0" + (c + 1))
-    $('.sub_num strong').text(s.slideCount)
+$('.businessSlide').slick({
+    arrows: false,
+    dots: false,
+    autoplay: false,
+    autoplaySpeed: 4000,
+    pauseOnHover: false,
+    pauseOnFocus: false,
 });
