@@ -19,7 +19,7 @@ $('.mainSlide').slick({
 });
 
 $('.businessSlide').slick({
-    arrows: false,
+    arrows: true,
     dots: false,
     autoplay: false,
     autoplaySpeed: 4000,
