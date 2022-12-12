@@ -89,15 +89,6 @@
     background: #fff;
 }
 
-.main_visual .main_num {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: #000;
-    font-size: 100px;
-    z-index: 9999;
-}
-
 .mainSlide .slick-arrow {
     position: absolute;
     top: 50%;
@@ -125,4 +116,11 @@
 .main_visual .mainSlide .slick-next {
     transform: translate(-50%, -50%) rotate(135deg);
     margin: 0 0 0 700px;
+}
+
+.main_visual .sc_down {
+    position: absolute;
+    font-size: 100px;
+    bottom: 0;
+    left: 50%;
 }
