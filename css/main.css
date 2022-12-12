@@ -1,73 +1,54 @@
 .header {
     width: 1200px;
     margin: 0 auto;
-    position: relative;
 }
 
 .header .inner {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     line-height: 100px;
-
+    z-index: 999;
 }
 
-.header .gnb ul {
+.header .gnb .fnb {
     display: flex;
     gap: 60px;
     font-size: 17px;
     font-weight: 300;
 }
 
-.header .gnb>ul>li .smenu {
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    line-height: 40px;
-    text-align: center;
-    transform: translate(-50%, 0);
-    width: 150px;
+.header nav {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    transform: translate(0, -50%);
     z-index: 999;
-    height: 0;
-    transition: 0.5s;
-    overflow: hidden;
 }
 
-#header .gnb>ul>li {
+.header nav>ul {
+    width: 50px;
+}
+
+.header nav>ul>li>a {
     position: relative;
+    display: block;
+    height: 20px;
+    font-size: 0;
+    margin: 0 0 30px 0;
 }
 
-#header .gnb>ul>li .smenu {
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    line-height: 40px;
-    text-align: center;
-    transform: translate(-50%, 0);
-    width: 100%;
-    z-index: 999;
-
-    height: 0;
-    transition: 0.5s;
-    overflow: hidden;
-}
-
-.header .gnb>ul:hover>li .smenu {
-    height: 300px;
-}
-
-.header .gnb>ul::before {
+.header nav>ul>li>a::after {
     content: "";
     position: absolute;
-    top: 100px;
-    left: 0;
+    top: 50%;
     right: 0;
-    height: 300px;
-    z-index: 999;
+    width: 12px;
+    height: 12px;
+    background-color: #000;
 
-    height: 0;
-    transition: 0.5s;
 }
 
-.header .gnb>ul:hover::before {
-    height: 300px;
+.header nav>ul>li.on>a::after {
+    transition: 0.5s;
 }
