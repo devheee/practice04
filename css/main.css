@@ -1,14 +1,17 @@
 .header {
-    width: 1200px;
-    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
 }
 
 .header .inner {
-    position: fixed;
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     line-height: 100px;
-    z-index: 999;
+
 }
 
 .header .gnb .fnb {
@@ -51,4 +54,75 @@
 
 .header nav>ul>li.on>a::after {
     transition: 0.5s;
+}
+
+
+.mainSlide .itm {
+    position: relative;
+    margin: 100px 0 0 0;
+}
+
+.mainSlide figure {
+    position: absolute;
+    top: 17%;
+    left: 18%;
+}
+
+.mainSlide p {
+    position: absolute;
+    top: 20.5%;
+    right: 29.5%;
+
+    font-size: 30px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.mainSlide p::before {
+    content: "";
+    display: block;
+    position: relative;
+    content: '';
+    width: 162px;
+    height: 4px;
+    margin-bottom: 13px;
+    background: #fff;
+}
+
+.main_visual .main_num {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #000;
+    font-size: 100px;
+    z-index: 9999;
+}
+
+.mainSlide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    cursor: pointer;
+
+    background: none;
+    border: none;
+    font-size: 0;
+
+    width: 100px;
+    height: 100px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.main_visual .mainSlide .slick-prev {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin: 0 0 0 -700px;
+}
+
+.main_visual .mainSlide .slick-next {
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 0 0 0 700px;
 }
