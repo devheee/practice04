@@ -59,8 +59,12 @@
 
 .mainSlide .itm {
     position: relative;
+}
+
+.mainSlide .itm01 .itmimg {
     margin: 100px 0 0 0;
 }
+
 
 .mainSlide figure {
     position: absolute;
@@ -118,9 +122,39 @@
     margin: 0 0 0 700px;
 }
 
-.main_visual .sc_down {
+.main_visual .sc_down p {
     position: absolute;
-    font-size: 100px;
-    bottom: 0;
+    font-size: 20px;
+    color: #fff;
+    bottom: 150px;
     left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.main_visual .sc_down img {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.businessSlide .bg01 {
+    background-image: url(../img/business01.jpg);
+}
+
+.businessSlide .bg01 .box01 {
+    position: relative;
+}
+
+.businessSlide .box-black {
+    position: absolute;
+    width: 484px;
+    height: 310px;
+    padding: 89px 0 0 60px;
+    top: 50%;
+    right: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    box-sizing: border-box;
+    text-align: left;
 }
