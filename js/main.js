@@ -9,11 +9,21 @@ $('.mainfull').fullpage({
 });
 
 $('.mainSlide').slick({
-    arrows: false,
+    arrows: true,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
     speed: 3000,
     pauseOnHover: false,
     pauseOnFocus: false,
+});
+
+var barwidth = $('.bar').width();
+$('.subSlide').on('afterChange', function (e, s, c) {
+    var bb = barwidth / s.slideCount;
+    $('.bar span').css({ width: bb })
+    $('.bar span').css({ width: bb * (c + 1) })
+
+    $('.sub_num span').text("0" + (c + 1))
+    $('.sub_num strong').text(s.slideCount)
 });
