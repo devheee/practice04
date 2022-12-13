@@ -253,7 +253,7 @@
 
 
 .sec03 {
-    background: #f9f9f9;
+    background: #eaecef;
 }
 
 
@@ -268,7 +268,7 @@
 
 .mainContent .txt p {
     height: 30px;
-    padding: 3px 0 0 29px;
+    padding: 3px 0 0 40px;
     margin-left: 20px;
     font-size: 20px;
     letter-spacing: 2px;
@@ -277,7 +277,7 @@
 
 .mainContent .txt h3 {
     height: 50px;
-    padding: 3px 0 0 29px;
+    padding: 3px 0 0 40px;
     margin-left: 20px;
     font-size: 40px;
     font-weight: 400;
@@ -287,7 +287,7 @@
 .mainContent .txt span {
     position: relative;
     top: -25px;
-    left: 210px;
+    left: 220px;
     display: inline-block;
     vertical-align: bottom;
     font-size: 14px;
@@ -324,11 +324,15 @@
 
 .mainContent .left_box {
     width: 680px;
-    height: 530px;
-    padding: 37px 28px 30px 29px;
+    height: 540px;
+    padding: 50px 29px 10px 29px;
     box-sizing: border-box;
     border: 4px solid #012b5d;
     background: #fff;
+}
+
+.mainContent .left_box .recruitbox {
+    margin: 20px 0 10px 0;
 }
 
 .mainContent .left_box .recruitbox em {
@@ -361,6 +365,13 @@
     font-weight: 300;
 }
 
+.mainContent .recruitbox strong {
+    display: block;
+    color: #666;
+    font-size: 13px;
+    font-weight: 300;
+}
+
 .left_box .recruitbox span::after {
     content: "";
     width: 621px;
@@ -373,22 +384,23 @@
 }
 
 
-
-
 .mainContent .right {
     flex: 1;
     width: 487px;
-    height: 530px;
+    height: 540px;
 }
 
 .mainContent .right_slide img {
+    position: relative;
+    margin-top: 17px;
     width: 487px;
     height: 300px;
 }
 
 .mainContent .right_slide .sldtxt {
+    position: relative;
     width: 100%;
-    height: 230px;
+    height: 238px;
     padding: 24px 45px 0 46px;
     background: #fff;
     box-sizing: border-box;
@@ -404,19 +416,44 @@
 }
 
 .mainContent .right_slide .sldtxt span {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 25px;
 }
 
 .mainContent .right_slide .sldtxt p {
+    position: absolute;
+    bottom: 20px;
+    left: 45px;
     font-size: 14px;
     font-weight: bold;
-    padding: 10px 0;
 }
 
 
+.right_slide .slick-arrow {
+    position: absolute;
+    top: -16px;
+    right: 3px;
+    z-index: 999;
+    cursor: pointer;
 
+
+    border: none;
+    font-size: 0;
+
+    width: 33px;
+    height: 33px;
+}
+
+.right_slide .slick-prev {
+    background: url(../img/btn_news.png) no-repeat;
+    margin: 0 40px 0 0;
+}
+
+.right_slide .slick-next {
+    background: url(../img/btn_news.png) no-repeat;
+    transform: rotate(180deg);
+}
 
 
 
