@@ -26,3 +26,12 @@ $('.businessSlide').slick({
     pauseOnHover: false,
     pauseOnFocus: false,
 });
+
+$('.right_slide').slick({
+    arrows: true,
+    dots: false,
+    autoplay: false,
+    autoplaySpeed: 4000,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+});
