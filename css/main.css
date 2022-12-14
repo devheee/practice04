@@ -28,11 +28,11 @@
     z-index: 999;
 }
 
-.header nav>ul {
+.header nav {
     width: 50px;
 }
 
-.header nav>ul>li>a {
+.header nav>a {
     position: relative;
     display: block;
     height: 20px;
@@ -40,19 +40,40 @@
     margin: 0 0 30px 0;
 }
 
-.header nav>ul>li>a::after {
+.header nav>a::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 200%;
     right: 0;
     width: 12px;
     height: 12px;
-    background-color: #000;
-
+    background: rgba(255, 255, 255, 0.3);
 }
 
-.header nav>ul>li.on>a::after {
-    transition: 0.5s;
+.header nav>a.on::before {
+    background: rgba(255, 255, 255, 1);
+}
+
+.header nav>a::after {
+    content: "";
+    position: absolute;
+    top: 300%;
+    right: 5px;
+    width: 1px;
+    height: 20px;
+    background: url(../img/dash_main_right.png);
+    opacity: 0.3;
+}
+
+.header nav>a:last-child::after {
+    content: none;
+    position: absolute;
+    top: 300%;
+    right: 5px;
+    width: 1px;
+    height: 20px;
+    background: url(../img/dash_main_right.png);
+    opacity: 0.3;
 }
 
 
@@ -100,8 +121,8 @@
 
 .mainSlide .slick-arrow {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    bottom: 70px;
+    left: 340px;
     transform: translate(-50%, -50%);
     z-index: 999;
     cursor: pointer;
@@ -110,28 +131,90 @@
     border: none;
     font-size: 0;
 
-    width: 100px;
-    height: 100px;
+    width: 30px;
+    height: 12px;
 
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .main_visual .mainSlide .slick-prev {
-    transform: translate(-50%, -50%) rotate(-45deg);
-    margin: 0 0 0 -700px;
+    background: url(../img/btn_main_slide_left.png) 0 2px no-repeat;
+    border: none;
+    margin: 0 0 0 -20px;
 }
 
 .main_visual .mainSlide .slick-next {
-    transform: translate(-50%, -50%) rotate(135deg);
-    margin: 0 0 0 700px;
+    background: url(../img/btn_main_slide_right.png) 0 2px no-repeat;
+    border: none;
+    margin: 0 0 0 20px;
 }
+
+
+.main_visual .controler .play {
+    position: absolute;
+    bottom: 75px;
+    left: 410px;
+    width: 16px;
+    height: 14px;
+    border: none;
+    background: url(../img/btn_main_slide_play.png) no-repeat;
+
+    cursor: pointer;
+}
+
+.main_visual .controler .stop {
+    position: absolute;
+    bottom: 75px;
+    left: 430px;
+    width: 16px;
+    height: 14px;
+    border: none;
+    background: url(../img/btn_main_slide_stop.png) no-repeat;
+
+    cursor: pointer;
+}
+
+.main_visual .bar {
+    position: relative;
+    bottom: 100px;
+    left: 300px;
+    width: 156px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.5);
+
+}
+
+.main_visual .bar span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 26px;
+    height: 100%;
+    background: #000;
+}
+
+.main_visual .num {
+    position: absolute;
+    bottom: 80px;
+    left: 466px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+
+}
+
+.main_visual .num span {
+    color: #fff;
+}
+
 
 .main_visual .sc_down p {
     position: absolute;
     font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
     color: #fff;
-    bottom: 100px;
+    bottom: 80px;
     left: 50%;
     transform: translate(-50%, -50%)
 }
@@ -142,6 +225,7 @@
     left: 50%;
     transform: translate(-50%, -50%)
 }
+
 
 
 
@@ -169,7 +253,7 @@
 .businessSlide .business .box {
     position: relative;
     width: 970px;
-    margin: 230px auto 0 auto;
+    margin: 190px auto 0 auto;
 }
 
 .businessSlide .box-black {
@@ -265,7 +349,7 @@
     display: flex;
     gap: 30px;
     width: 1200px;
-    margin: 0 auto;
+    margin: 90px auto 0 auto;
 }
 
 .mainContent .txt p {
