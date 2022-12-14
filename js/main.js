@@ -12,10 +12,29 @@ $('.mainSlide').slick({
     arrows: true,
     dots: false,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2000,
     speed: 3000,
     pauseOnHover: false,
     pauseOnFocus: false,
+});
+
+var barwidth = $('.bar').width();
+$('.mainSlide').on('afterChange', function (e, s, c) {
+    var bb = barwidth / s.slideCount;
+    $('.bar span').css({ width: bb })
+    $('.bar span').css({ width: bb * (c + 1) })
+
+    $('.num span').text("0" + (c + 1))
+    $('.num strong').text(s.slideCount)
+});
+
+
+$('.play').click(function () {
+    $('.mainSlide').slick('slickPlay');
+});
+
+$('.stop').click(function () {
+    $('.mainSlide').slick('slickPause');
 });
 
 $('.businessSlide').slick({
