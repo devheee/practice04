@@ -3,7 +3,7 @@ $('.mainfull').fullpage({
     // // navigation: true,
     afterLoad: function (anchorLink, index) {
         console.log(anchorLink, index)
-        $('.header nav>ul>li').eq(index - 1).addClass('on').siblings().removeClass('on');
+        $('.header nav>a').eq(index - 1).addClass('current').siblings().removeClass('current');
         $('.section').eq(index - 1).addClass('on').siblings().removeClass('on');
     }
 });
