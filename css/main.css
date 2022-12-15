@@ -37,7 +37,6 @@
 
 .header .gnb>ul>li .submenu {
     position: absolute;
-    top: 100px;
     left: 50%;
     line-height: 30px;
     font-size: 14px;
@@ -81,12 +80,11 @@
 .header nav {
     position: fixed;
     width: 50px;
-    top: 50%;
+    top: 520px;
     right: 50px;
     transform: translate(0, -50%);
     z-index: 999;
 }
-
 
 .header nav>a {
     position: relative;
@@ -323,7 +321,7 @@
 .businessSlide .business .box {
     position: relative;
     width: 970px;
-    margin: 190px auto 0 auto;
+    margin: 240px auto 0 auto;
 }
 
 .businessSlide .box-black {
@@ -378,7 +376,7 @@
 
 .businessSlide .slick-arrow {
     position: absolute;
-    top: 50%;
+    top: 540px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
