@@ -77,7 +77,7 @@
 
 
 
-.header nav {
+nav {
     position: fixed;
     width: 50px;
     top: 520px;
@@ -86,7 +86,7 @@
     z-index: 999;
 }
 
-.header nav>a {
+nav>a {
     position: relative;
     display: block;
     height: 20px;
@@ -94,7 +94,7 @@
     margin: 0 0 30px 0;
 }
 
-.header nav>a::before {
+nav>a::before {
     content: "";
     position: absolute;
     top: 200%;
@@ -104,24 +104,24 @@
     background: rgba(255, 255, 255, 0.3);
 }
 
-.header nav>a.on::before {
+nav>a.on::before {
     background: rgba(255, 255, 255, 1);
 }
 
-.header nav>a.dark::before {
+nav>a.dark::before {
     background: #333;
 }
 
-.header nav>a.gray::after {
+nav>a.gray::after {
     background: url(../img/dash_main_right2.png);
     opacity: 1;
 }
 
-.header nav>a.gray::before {
+nav>a.gray::before {
     background: rgb(187, 187, 187);
 }
 
-.header nav>a::after {
+nav>a::after {
     content: "";
     position: absolute;
     top: 300%;
@@ -132,7 +132,7 @@
     opacity: 0.3;
 }
 
-.header nav>a:last-child::after {
+nav>a:last-child::after {
     content: none;
     position: absolute;
     top: 300%;
