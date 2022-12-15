@@ -54,7 +54,18 @@
     background: rgba(255, 255, 255, 1);
 }
 
+.header nav>a.dark::before {
+    background: #333;
+}
 
+.header nav>a.gray::after {
+    background: url(../img/dash_main_right2.png);
+    opacity: 1;
+}
+
+.header nav>a.gray::before {
+    background: rgb(187, 187, 187);
+}
 
 .header nav>a::after {
     content: "";
