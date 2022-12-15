@@ -24,7 +24,6 @@
 
 .header .fnb figure {
     position: absolute;
-    top: 0;
 }
 
 .header .gnb>ul>li {
@@ -42,6 +41,7 @@
     left: 50%;
     line-height: 30px;
     font-size: 14px;
+    color: #111;
     transform: translate(-50%, 0);
 
     margin: 10px 0 0 0;
@@ -50,10 +50,12 @@
     height: 0;
     overflow: hidden;
 
-    transition: 0.5s;
+    opacity: 0;
+    transition: 0.3s;
 }
 
 .header:hover .gnb>ul>li .submenu {
+    opacity: 1;
     height: 300px;
 
 }
@@ -67,7 +69,7 @@
     height: 0;
     background: #f4f7fc;
 
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .header:hover .gnb::before {
