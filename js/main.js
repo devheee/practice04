@@ -3,13 +3,13 @@ $('.mainfull').fullpage({
     // // navigation: true,
     afterLoad: function (anchorLink, index) {
         console.log(anchorLink, index)
-        $('.header nav>a').eq(index - 1).addClass('on').siblings().removeClass('on');
+        $('nav>a').eq(index - 1).addClass('on').siblings().removeClass('on');
         $('.section').eq(index - 1).addClass('on').siblings().removeClass('on');
 
         if (index == 3) {
-            $('.header nav>a').eq(2).addClass('dark').siblings().addClass('gray');
+            $('nav>a').eq(2).addClass('dark').siblings().addClass('gray');
         } else {
-            $('.header nav>a').eq(2).removeClass('dark').siblings().removeClass('gray');
+            $('nav>a').eq(2).removeClass('dark').siblings().removeClass('gray');
         }
     }
 });
