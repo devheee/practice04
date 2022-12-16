@@ -586,7 +586,7 @@ nav>a:last-child::after {
 
 .right_slide .slick-arrow {
     position: absolute;
-    top: -16px;
+    top: -30px;
     right: 3px;
     z-index: 999;
     cursor: pointer;
