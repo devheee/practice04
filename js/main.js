@@ -19,7 +19,7 @@ $('.mainSlide').slick({
     dots: false,
     autoplay: true,
     autoplaySpeed: 2000,
-    speed: 3000,
+    speed: 2000,
     pauseOnHover: false,
     pauseOnFocus: false,
 });
