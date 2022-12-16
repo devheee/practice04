@@ -6,7 +6,7 @@ $('.mainfull').fullpage({
         $('nav>a').eq(index - 1).addClass('on').siblings().removeClass('on');
         $('.section').eq(index - 1).addClass('on').siblings().removeClass('on');
 
-        if (index == 3) {
+        if (index == 3 || index == 4) {
             $('nav>a').eq(2).addClass('dark').siblings().addClass('gray');
         } else {
             $('nav>a').eq(2).removeClass('dark').siblings().removeClass('gray');
